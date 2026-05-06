@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Subscription App - Main</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <div>
+        <h1>Music Subscription App</h1>
+        <p id="userArea">Welcome</p>
+    </div>
+
+    <button id="logoutButton" class="logout-button">Logout</button>
+</header>
+
+<main class="main-layout">
+
+    <section class="panel">
+        <h2>Your Subscriptions</h2>
+        <p class="section-note">Songs you subscribe to will appear here.</p>
+        <div id="subscriptionMessage" class="message"></div>
+        <div id="subscriptionList" class="song-grid"></div>
+    </section>
+
+    <section class="panel">
+        <h2>Query Music</h2>
+        <p class="section-note">Enter at least one field. Multiple fields are treated as AND conditions.</p>
+
+        <form id="queryForm" class="query-form">
+            <div>
+                <label for="queryTitle">Title</label>
+                <input type="text" id="queryTitle" placeholder="e.g. Love Story">
+            </div>
+
+            <div>
+                <label for="queryYear">Year</label>
+                <input type="text" id="queryYear" placeholder="e.g. 1974">
+            </div>
+
+            <div>
+                <label for="queryArtist">Artist</label>
+                <input type="text" id="queryArtist" placeholder="e.g. Taylor Swift">
+            </div>
+
+            <div>
+                <label for="queryAlbum">Album</label>
+                <input type="text" id="queryAlbum" placeholder="e.g. Fearless">
+            </div>
+
+            <button type="submit">Query</button>
+        </form>
+
+        <p id="queryMessage" class="message"></p>
+        <div id="queryResults" class="song-grid"></div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

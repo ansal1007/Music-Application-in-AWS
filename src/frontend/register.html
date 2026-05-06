@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Subscription App - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h1>Create Account</h1>
+        <p class="subtitle">Register with a unique email address</p>
+
+        <form id="registerForm">
+            <label for="registerEmail">Email</label>
+            <input type="email" id="registerEmail" required placeholder="Enter your email">
+
+            <label for="registerUserName">Username</label>
+            <input type="text" id="registerUserName" required placeholder="Enter your username">
+
+            <label for="registerPassword">Password</label>
+            <input type="password" id="registerPassword" required placeholder="Enter your password">
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="registerMessage" class="message"></p>
+
+        <p class="page-link">
+            Already registered?
+            <a href="login.html">Go to login</a>
+        </p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

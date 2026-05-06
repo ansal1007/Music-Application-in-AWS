@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Subscription App - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h1>Music Subscription App</h1>
+        <p class="subtitle">Login to manage your music subscriptions</p>
+
+        <form id="loginForm">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" required placeholder="Enter your email">
+
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" required placeholder="Enter your password">
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p id="loginMessage" class="message"></p>
+
+        <p class="page-link">
+            New user?
+            <a href="register.html">Register here</a>
+        </p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
